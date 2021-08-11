@@ -1,0 +1,88 @@
+.show-desktop{
+    display: block;
+}
+.show-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 1920px) {
+
+}
+@media screen and (max-width: 1366px) {
+
+}
+@media screen and (max-width: 1024px){
+    /*mobile*/
+    .content-right {
+        flex-basis: 100%;
+    }
+    .top-menu{
+        display: none;
+    }
+    label#menu-label {
+        display: block;
+    }
+    #menu-list:checked ~ #menu-label {
+        background-image: url(../images/close.png);
+        position: fixed;
+        top: 0;
+        z-index: 123123;
+    }
+    .cont-info-bar {
+        display: none;
+        z-index: 100000;
+        width: 80%;
+    }
+    #menu-list:checked ~ .cont-info-bar{
+        display: flex;
+    }
+    .content-left label {
+        display: none;
+        height: 40px;
+        width: 40px;
+        background-image: url(../images/menu.png);
+        background-size: 35px 35px;
+        background-repeat: no-repeat;
+        background-position: right center;
+        position: relative;
+    }
+    #detail {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 960px) {
+    .item-box-project {
+        width: calc((100% - 20px) / 2);
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .show-desktop,
+    .show-mobile {
+        display: block;
+    }
+    .box-detail {
+        width: 100%;
+    }
+    .item-box-project img {
+        width: 100%;
+        height: auto;
+    }
+    .title-project {
+        font-size: 25px;
+        padding-top: 0;
+    }
+    .hero h2.title {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 375px){
+
+}
+@media screen and (max-width: 360px){
+
+}
+@media screen and (max-width: 320px){
+
+}
