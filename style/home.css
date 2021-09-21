@@ -27,6 +27,15 @@ body {
 i{
     margin-right: 5px;
 }
+.language li{
+    display: inline-block;
+}
+.language li a{
+    color: black;
+}
+.language li a:hover{
+    color: dodgerblue;
+}
 /*css content*/
 .content .container-fluid {
     display: flex;
